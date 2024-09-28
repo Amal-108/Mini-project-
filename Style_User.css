@@ -1,0 +1,191 @@
+/* Styles for User Management Content */
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #1c87c9;
+    box-shadow: 0 0 5px rgba(28, 135, 201, 0.3);
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c87c9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #155e87;
+}
+
+/* User List Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+table thead {
+    background-color: #1c87c9;
+    color: #fff;
+    font-weight: bold;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+table tbody tr:hover {
+    background-color: #f4f4f9;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table th:last-child,
+table td:last-child {
+    text-align: center;
+}
+
+.user-list .action-btn {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+.user-list .edit-btn {
+    background-color: #1c87c9;
+}
+
+.user-list .delete-btn {
+    background-color: #d9534f;
+}
+
+.user-list .edit-btn:hover {
+    background-color: #155e87;
+}
+
+.user-list .delete-btn:hover {
+    background-color: #b52a2a;
+}
+
+/* Batch Assignment Styles */
+.batch-assignment {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.batch-assignment form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.batch-assignment label {
+    font-weight: bold;
+    color: #333;
+}
+
+.batch-assignment input,
+.batch-assignment select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.batch-assignment button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c87c9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.batch-assignment button:hover {
+    background-color: #155e87;
+}
+
+/* Ensure the sidebar and overall layout remain the same */
+.sidebar a.active {
+    background-color: #444;
+    color: #fff;
+}
+
+.action-selection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.action-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.action-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.action-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.action-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
